@@ -1,7 +1,7 @@
 ---
-import background from '../assets/background.svg';
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.svg';
+import ruralImage from '../assets/rural.jpg';
 
 const name = import.meta.env.PUBLIC_NAME;
 ---
@@ -10,7 +10,7 @@ const name = import.meta.env.PUBLIC_NAME;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center">
       <div class="flex items-center">
-        <Image src={logo} alt="Logo" width={500} height={300} class="w-auto h-20" />
+        <Image src={logo} alt="Logo"  class="w-auto h-20" />
       </div>
       
       {/* Desktop Navigation */}
@@ -47,12 +47,44 @@ const name = import.meta.env.PUBLIC_NAME;
         <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
         <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
         <a href="/quote" class="block w-full text-center px-4 py-2 mt-4 text-base font-medium text-gray-800 border-2 border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300">
-          Request a quote
+          Contribute
         </a>
       </div>
     </div>
   </div>
 </header>
+
+<section class="relative pt-32 lg:pt-36">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Text Content */}
+      <div class="space-y-6 order-2 lg:order-1">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-minecraft leading-tight text-gray-900">
+          Towards a transformed India, where a billion thrive with dignity and equity
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 font-minecraft">
+          Join us to make a difference
+        </p>
+        <div class="pt-4">
+          <a href="/join" class="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-minecraft rounded-full hover:bg-gray-800 transition-colors duration-300">
+            Learn more
+          </a>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div class="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden order-1 lg:order-2">
+        <Image 
+          src={ruralImage} 
+          alt="Rural India" 
+          class="object-cover w-full h-full"
+          width={800}
+          height={500}
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
   const mobileMenuButton = document.getElementById('mobile-menu-button');
