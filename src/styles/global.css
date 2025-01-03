@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/fonts/Minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply Minecraft font to all elements */
+* {
+    font-family: 'Minecraft', sans-serif;
+}
