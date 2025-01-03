@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.svg';
 import ruralImage from '../assets/rural.jpg';
+import mission from'../assets/mission.jpg';
 
 const name = import.meta.env.PUBLIC_NAME;
 ---
@@ -15,11 +16,11 @@ const name = import.meta.env.PUBLIC_NAME;
       
       {/* Desktop Navigation */}
       <nav class="hidden md:flex space-x-8">
-        <a href="/about" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">About us</a>
-        <a href="/services" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Services</a>
-        <a href="/use-cases" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Use Cases</a>
-        <a href="/pricing" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Pricing</a>
-        <a href="/blog" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Blog</a>
+        <a href="/about" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">About us</a>
+        <a href="/services" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Intiatives</a>
+        <a href="/use-cases" class="text-gray-700 hover:text-gray-900 font-minecrafttransition-colors">Get Involved</a>
+        <a href="/pricing" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Impact</a>
+        <a href="/blog" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Blog</a>
       </nav>
 
       {/* Desktop CTA Button */}
@@ -41,12 +42,12 @@ const name = import.meta.env.PUBLIC_NAME;
     {/* Mobile Menu */}
     <div id="mobile-menu" class="hidden md:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About us</a>
-        <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
-        <a href="/use-cases" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Use Cases</a>
-        <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
-        <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
-        <a href="/quote" class="block w-full text-center px-4 py-2 mt-4 text-base font-medium text-gray-800 border-2 border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300">
+        <a href="/about" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">About us</a>
+        <a href="/services" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Intiatives</a>
+        <a href="/use-cases" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Get Involved</a>
+        <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Impact</a>
+        <a href="/blog" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
+        <a href="/quote" class="block w-full text-center px-4 py-2 mt-4 text-base font-minecraft text-gray-800 border-2 border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300">
           Contribute
         </a>
       </div>
@@ -62,10 +63,10 @@ const name = import.meta.env.PUBLIC_NAME;
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-minecraft leading-tight text-gray-900">
           Towards a transformed India, where a billion thrive with dignity and equity
         </h1>
-        <p class="text-xl md:text-2xl text-gray-600 font-minecraft">
+        <p class="text-xl md:text-2xl text-blue-900 font-minecraft">
           Join us to make a difference
         </p>
-        <div class="pt-4">
+        <div class="pt-3">
           <a href="/join" class="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-minecraft rounded-full hover:bg-gray-800 transition-colors duration-300">
             Learn more
           </a>
@@ -82,6 +83,108 @@ const name = import.meta.env.PUBLIC_NAME;
           height={500}
         />
       </div>
+    </div>
+  </div>
+</section>
+
+{/* Mission Section */}
+<section class="py-20">
+  <div class="flex flex-col md:flex-row w-full">
+    {/* Mission Text */}
+    <div class="w-full md:w-1/2 bg-[#00A7B5] p-12 md:p-20 flex items-center">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-minecraft text-white mb-6">Our Mission</h2>
+        <p class="text-xl md:text-2xl text-white font-minecraft leading-relaxed">
+          We ignite the self-worth and dignity of common people across the villages and cities of India and mobilize them as equal stakeholders — inspiring them to leverage the value and potential of all they have — to solve their challenges.
+        </p>
+      </div>
+    </div>
+
+    {/* Mission Image */}
+    <div class="w-full md:w-1/2 h-[400px] md:h-auto">
+      <Image 
+        src={mission} 
+        alt="Rural community members" 
+        class="w-full h-full object-cover"
+        width={1200}
+        height={800}
+      />
+    </div>
+  </div>
+</section>
+
+{/* Objectives Section */}
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Section Header */}
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-minecraft text-gray-900 mb-4">Objectives</h2>
+      <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+    </div>
+
+    {/* Objectives Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Objective 1 */}
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="text-blue-900 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-minecraft text-gray-900 mb-4">Essential Support</h3>
+        <p class="text-gray-600 font-minecraft text-sm">To help and facilitate poor people by providing them with essential requirements like food, clothes etc.</p>
+      </div>
+
+      {/* Objective 2 */}
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="text-blue-900 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-minecraft text-gray-900 mb-4">Education Support</h3>
+        <p class="text-gray-600 font-minecraft text-sm">To help students pursue their education by providing them with stationaries such as pens, pencils, books, or any other beneficence.</p>
+      </div>
+
+      {/* Objective 3 */}
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="text-blue-900 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-minecraft text-gray-900 mb-4">Special Care Services</h3>
+        <p class="text-gray-600 font-minecraft text-sm">To assist and render services to physically and mentally challenged people.</p>
+      </div>
+
+      {/* Objective 4 */}
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="text-blue-900 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-minecraft text-gray-900 mb-4">Animal Welfare</h3>
+        <p class="text-gray-600 font-minecraft text-sm">To provide food for street animals.</p>
+      </div>
+
+      {/* Objective 5 */}
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="text-blue-900 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-minecraft text-gray-900 mb-4">Environmental Care</h3>
+        <p class="text-gray-600 font-minecraft text-sm">To clean the streets, buildings, and public places and also create awareness among the public on the current environmental issues.</p>
+      </div>
+    </div>
+
+    {/* Bottom CTA */}
+    <div class="text-center mt-16">
+      <a href="/objectives" class="inline-flex items-center px-8 py-4 bg-blue-900 text-white font-minecraft rounded-full hover:bg-blue-800 transition-colors duration-300">
+        Learn More About Our Work
+      </a>
     </div>
   </div>
 </section>
