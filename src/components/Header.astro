@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+---
+
+<header class="w-full py-4 bg-white fixed top-0 z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <Image src={logo} alt="Logo"  class="w-auto h-20" />
+      </div>
+      
+      {/* Desktop Navigation */}
+      <nav class="hidden md:flex space-x-8">
+        {/* About Us Dropdown */}
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors flex items-center">
+            About us
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-1">
+              <a href="/about/vision" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-minecraft">Vision</a>
+              <a href="/about/mission" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-minecraft">Mission</a>
+              <a href="/about/team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-minecraft">Our Team</a>
+              <a href="/about/history" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-minecraft">History</a>
+            </div>
+          </div>
+        </div>
+        <a href="/services" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Intiatives</a>
+        <a href="/use-cases" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Get Involved</a>
+        <a href="/pricing" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Impact</a>
+        <a href="/blog" class="text-gray-700 hover:text-gray-900 font-minecraft transition-colors">Blog</a>
+      </nav>
+
+      {/* Desktop CTA Button */}
+      <div class="hidden md:flex items-center">
+        <a href="/quote" class="inline-flex items-center px-6 py-3 border-2 border-gray-800 text-gray-800 font-semibold rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300">
+          Contribute
+        </a>
+      </div>
+
+      {/* Mobile Menu Button */}
+      <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+        <span class="sr-only">Open menu</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    {/* Mobile Menu */}
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        {/* Mobile About Us Dropdown */}
+        <div class="relative">
+          <button id="mobile-about-button" class="flex justify-between items-center w-full px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+            About us
+            <svg class="w-4 h-4 ml-1 transform transition-transform" id="mobile-about-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-about-dropdown" class="hidden bg-gray-50 rounded-md mt-1">
+            <a href="/about/vision" class="block px-4 py-2 text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-100">Vision</a>
+            <a href="/about/mission" class="block px-4 py-2 text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-100">Mission</a>
+            <a href="/about/team" class="block px-4 py-2 text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-100">Our Team</a>
+            <a href="/about/history" class="block px-4 py-2 text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-100">History</a>
+          </div>
+        </div>
+        <a href="/services" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Intiatives</a>
+        <a href="/use-cases" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Get Involved</a>
+        <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Impact</a>
+        <a href="/blog" class="block px-3 py-2 rounded-md text-base font-minecraft text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
+        <a href="/quote" class="block w-full text-center px-4 py-2 mt-4 text-base font-minecraft text-gray-800 border-2 border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300">
+          Contribute
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Mobile About dropdown toggle
+  const mobileAboutButton = document.getElementById('mobile-about-button');
+  const mobileAboutDropdown = document.getElementById('mobile-about-dropdown');
+  const mobileAboutArrow = document.getElementById('mobile-about-arrow');
+
+  mobileAboutButton?.addEventListener('click', () => {
+    mobileAboutDropdown?.classList.toggle('hidden');
+    mobileAboutArrow?.classList.toggle('rotate-180');
+  });
+</script>
