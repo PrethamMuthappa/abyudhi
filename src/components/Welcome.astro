@@ -9,6 +9,7 @@ import img1 from '../assets/1.jpeg';
 import img2 from '../assets/2.jpeg';
 import img3 from '../assets/3.jpeg';
 import img4 from '../assets/4.jpeg';
+import img5 from '../assets/5.jpeg';
 import Header from './Header.astro';
 
 const name = import.meta.env.PUBLIC_NAME;
@@ -79,33 +80,40 @@ const name = import.meta.env.PUBLIC_NAME;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {/* Large image */}
-      <div class="relative h-48 sm:h-64 md:h-80 lg:h-96">
+      <div class="relative h-48 sm:h-64 md:h-[500px]">
         <Image 
           src={img1} 
           alt="Abhyudhi Impact 1" 
           class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
         />
       </div>
-      {/* Three smaller images */}
-      <div class="grid grid-cols-2 md:grid-rows-2 gap-4">
-        <div class="relative h-48 sm:h-64 md:h-36 lg:h-44 md:col-span-2">
+      {/* Four smaller images */}
+      <div class="grid grid-cols-2 gap-4">
+        <div class="relative h-48 sm:h-64 md:h-[240px]">
           <Image 
             src={img2} 
             alt="Abhyudhi Impact 2" 
             class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </div>
-        <div class="relative h-48 sm:h-64 md:h-36 lg:h-44">
+        <div class="relative h-48 sm:h-64 md:h-[240px]">
           <Image 
             src={img3} 
             alt="Abhyudhi Impact 3" 
             class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </div>
-        <div class="relative h-48 sm:h-64 md:h-36 lg:h-44">
+        <div class="relative h-48 sm:h-64 md:h-[240px]">
           <Image 
             src={img4} 
             alt="Abhyudhi Impact 4" 
+            class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          />
+        </div>
+        <div class="relative h-48 sm:h-64 md:h-[240px]">
+          <Image 
+            src={img5} 
+            alt="Abhyudhi Impact 5" 
             class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </div>
