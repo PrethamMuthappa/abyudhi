@@ -122,6 +122,31 @@ const name = import.meta.env.PUBLIC_NAME;
   </div>
 </section>
 
+<section class="py-20">
+  <div class="flex flex-col md:flex-row w-full">
+    {/* Mission Text */}
+    <div class="w-full md:w-1/2 bg-blue-900 p-12 md:p-20 flex items-center">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-minecraft text-white mb-6">About us</h2>
+        <p class="text-xl md:text-2xl text-white font-minecraft leading-relaxed">
+          Abhyudhi Foundation is an NGO working for the upliftment of our society. We believe in the power of collective action and community empowerment to transform lives and communities. Established in the year 2022 with guidance of Sri. S Nagendra. Abhyudhi is operated by a team of dedicated volunteers who are passionate about making a positive impact in the lives of the marginalized.
+        </p>
+      </div>
+    </div>
+
+    {/* Mission Image */}
+    <div class="w-full md:w-1/2 h-[400px] md:h-auto">
+      <Image 
+        src={mission} 
+        alt="Rural community members" 
+        class="w-full h-full object-cover"
+        width={1200}
+        height={800}
+      />
+    </div>
+  </div>
+</section>
+
 {/* Objectives Section */}
 <section class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
