@@ -1,6 +1,11 @@
 ---
 
 import Header from "./Header.astro"
+import co1 from '../assets/co1.jpeg'
+import co2 from '../assets/co2.jpeg'
+import co3 from '../assets/co3.jpeg'   
+import co4 from '../assets/co4.jpeg'
+import Image from "astro/components/Image.astro"; 
 ---
 
 <Header/>
@@ -21,38 +26,55 @@ import Header from "./Header.astro"
             {/* Co-founder 1 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-square mb-6 overflow-hidden rounded-lg">
-                    <img src="/placeholder-founder1.jpg" alt="Co-founder Name" class="w-full h-full object-cover" />
+                    <Image 
+                    src={co1} 
+                    alt="Co-founder Name" 
+                    class="w-full h-full object-cover"                    
+                  />    
                 </div>
-                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Co-founder Name</h3>
-                <p class="text-gray-300">Position/Role</p>
-                <p class="text-gray-300">B.A, LLB</p>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Sharan Aiyappa </h3>
+            
+                <p class="text-gray-300">B.A.LL.B</p>
             </div>
 
             {/* Co-founder 2 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-square mb-6 overflow-hidden rounded-lg">
-                    <img src="/placeholder-founder2.jpg" alt="Co-founder Name" class="w-full h-full object-cover" />
+                    <Image 
+                    src={co3} 
+                    alt="Co-founder Name"            
+                    class="w-full h-full object-cover"
+                    ></Image>
                 </div>
-                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Co-founder Name</h3>
-                <p class="text-gray-300">Position/Role</p>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Sampat Nagraj Joshi </h3>
+            
+                <p class="text-gray-300">B.A.LL.B</p>
             </div>
 
             {/* Co-founder 3 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-square mb-6 overflow-hidden rounded-lg">
-                    <img src="/placeholder-founder3.jpg" alt="Co-founder Name" class="w-full h-full object-cover" />
+                    <Image 
+                    src={co2} 
+                    alt="Co-founder Name"
+                    class="w-full h-full object-cover"
+                    ></Image>
                 </div>
-                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Co-founder Name</h3>
-                <p class="text-gray-300">Position/Role</p>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Varun Bopanna </h3>
+                <p class="text-gray-300">B.A.LL.B</p>
             </div>
 
             {/* Co-founder 4 - Centered */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all md:col-span-2 lg:col-span-1 lg:col-start-2">
                 <div class="aspect-square mb-6 overflow-hidden rounded-lg">
-                    <img src="/placeholder-founder4.jpg" alt="Co-founder Name" class="w-full h-full object-cover" />
+                   <Image 
+                    src={co4} 
+                    alt="Co-founder Name"
+                    class="w-full h-full object-cover"
+                    ></Image>   
                 </div>
-                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Co-founder Name</h3>
-                <p class="text-gray-300">Position/Role</p>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Nishkal Ram</h3>
+                <p class="text-gray-300">B.A.LL.B</p>
             </div>
         </div>
 
