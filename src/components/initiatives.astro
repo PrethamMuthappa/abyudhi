@@ -1,5 +1,12 @@
 ---
 import Header from "./Header.astro"
+import edu from '../assets/edu.jpeg';
+import health from '../assets/health.jpeg';
+import women from '../assets/women.jpeg';
+import rural from '../assets/ruraldevs.jpeg';
+import Image from "astro/components/Image.astro";
+import envs from '../assets/envs.jpeg';
+import youth from '../assets/youth.jpeg';
 ---
 
 <Header/>
@@ -19,7 +26,12 @@ import Header from "./Header.astro"
             {/* Initiative 1 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/education-initiative.jpg" alt="Education Initiative" class="w-full h-full object-cover" />
+                    <Image 
+                    src={edu} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"
+                    
+                  />
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Education Empowerment</h3>
                 <p class="text-gray-300">Supporting underprivileged students with quality education and resources.</p>
@@ -28,7 +40,12 @@ import Header from "./Header.astro"
             {/* Initiative 2 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/health-initiative.jpg" alt="Healthcare Initiative" class="w-full h-full object-cover" />
+                    <Image 
+                    src={health} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"
+                    
+                  />
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Healthcare Access</h3>
                 <p class="text-gray-300">Providing medical care and health awareness in rural communities.</p>
@@ -37,7 +54,11 @@ import Header from "./Header.astro"
             {/* Initiative 3 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/women-empowerment.jpg" alt="Women Empowerment" class="w-full h-full object-cover" />
+                    <Image 
+                    src={women} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"                    
+                  />
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Women Empowerment</h3>
                 <p class="text-gray-300">Enabling women through skill development and entrepreneurship programs.</p>
@@ -46,7 +67,11 @@ import Header from "./Header.astro"
             {/* Initiative 4 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/rural-development.jpg" alt="Rural Development" class="w-full h-full object-cover" />
+                    <Image 
+                    src={rural} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"                    
+                  />
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Rural Development</h3>
                 <p class="text-gray-300">Building sustainable infrastructure and promoting rural economy.</p>
@@ -55,7 +80,11 @@ import Header from "./Header.astro"
             {/* Initiative 5 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/environmental.jpg" alt="Environmental Conservation" class="w-full h-full object-cover" />
+                   <Image 
+                    src={envs} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"                    
+                  />    
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Environmental Conservation</h3>
                 <p class="text-gray-300">Promoting sustainable practices and environmental awareness.</p>
@@ -64,7 +93,11 @@ import Header from "./Header.astro"
             {/* Initiative 6 */}
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
                 <div class="aspect-video mb-6 overflow-hidden rounded-lg">
-                    <img src="/youth-development.jpg" alt="Youth Development" class="w-full h-full object-cover" />
+                   <Image 
+                    src={youth} 
+                    alt="Rural India" 
+                    class="object-cover w-full h-full"                    
+                  />
                 </div>
                 <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Youth Development</h3>
                 <p class="text-gray-300">Nurturing young talent through mentorship and leadership programs.</p>
