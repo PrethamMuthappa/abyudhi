@@ -1,0 +1,121 @@
+---
+import Header from "./Header.astro"
+---
+
+<Header />
+
+<main class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
+                Support Our Cause
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Your contribution can make a real difference in transforming lives across India.
+            </p>
+        </div>
+
+        {/* Bank Transfer Section */}
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-yellow-400">
+                Donate By NEFT Or RTGS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Axis Bank */}
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                    <img src="/axis-bank-logo.png" alt="Axis Bank" class="h-12 mb-6" />
+                    <div class="space-y-4 text-gray-200">
+                        <div>
+                            <p class="text-sm text-gray-400">A/C Holder Name:</p>
+                            <p class="font-semibold">Raise India Foundation</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">A/C No.:</p>
+                            <p class="font-semibold">916010019605596</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">IFSC Code:</p>
+                            <p class="font-semibold">UTIB0000696</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Address:</p>
+                            <p class="font-semibold">Uttam Nagar, New Delhi 110059</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Kotak Bank */}
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                    <img src="/kotak-bank-logo.png" alt="Kotak Bank" class="h-12 mb-6" />
+                    <div class="space-y-4 text-gray-200">
+                        <div>
+                            <p class="text-sm text-gray-400">A/C Holder Name:</p>
+                            <p class="font-semibold">Raise India Foundation</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">A/C No.:</p>
+                            <p class="font-semibold">4612861721</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">IFSC Code:</p>
+                            <p class="font-semibold">KKBK0004614</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Address:</p>
+                            <p class="font-semibold">Property Bearing No. Thana Road, Najafgarh New Delhi 110043</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Yes Bank */}
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                    <img src="/yes-bank-logo.png" alt="Yes Bank" class="h-12 mb-6" />
+                    <div class="space-y-4 text-gray-200">
+                        <div>
+                            <p class="text-sm text-gray-400">A/C Holder Name:</p>
+                            <p class="font-semibold">Raise India Foundation</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">A/C No.:</p>
+                            <p class="font-semibold">052288700000082</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">IFSC Code:</p>
+                            <p class="font-semibold">YESB0000522</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Address:</p>
+                            <p class="font-semibold">Janak Puri, New Delhi 110058</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* QR Code Section */}
+        <div class="text-center">
+            <h2 class="text-3xl font-bold mb-12 text-yellow-400">
+                Donate Using QR Code
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {/* UPI QR */}
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                    <img src="/upi-qr.png" alt="UPI QR Code" class="w-full max-w-xs mx-auto mb-4" />
+                    <p class="text-lg font-semibold text-gray-200">UPI QR Code</p>
+                </div>
+
+                {/* Paytm QR */}
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                    <img src="/paytm-qr.png" alt="Paytm QR Code" class="w-full max-w-xs mx-auto mb-4" />
+                    <p class="text-lg font-semibold text-gray-200">Paytm QR Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    .container {
+        max-width: 1200px;
+    }
+</style>
