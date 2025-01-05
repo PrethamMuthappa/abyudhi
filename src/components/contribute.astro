@@ -1,5 +1,7 @@
 ---
 import Header from "./Header.astro"
+import gpay from '../assets/gpay.svg'
+import Image from "astro/components/Image.astro"
 ---
 <Header />  
 
@@ -100,9 +102,9 @@ import Header from "./Header.astro"
                 {/* UPI QR */}
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 hover:bg-white/15 transition-all">
                     <div class="aspect-square max-w-[200px] sm:max-w-[250px] mx-auto mb-3 sm:mb-4">
-                        <img src="/upi-qr.png" alt="UPI QR Code" class="w-full h-full object-contain" />
+                        <Image src={gpay} alt="UPI QR Code" class="w-full h-full object-contain" /> 
                     </div>
-                    <p class="text-base sm:text-lg font-semibold text-gray-200">UPI QR Code</p>
+                    <p class="text-base sm:text-lg font-semibold text-gray-200">Gpay QR Code</p>
                 </div>
 
                 {/* Paytm QR */}
