@@ -1,0 +1,97 @@
+---
+import Header from "./Header.astro"
+---
+
+<Header/>
+<main class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white py-8 sm:py-12 md:py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-8 sm:mb-12 md:mb-16">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
+                Our Initiatives
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto px-4 mt-14">
+                Empowering communities through sustainable development and education.
+            </p>
+        </div>
+
+        {/* Initiatives Grid */}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Initiative 1 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/education-initiative.jpg" alt="Education Initiative" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Education Empowerment</h3>
+                <p class="text-gray-300">Supporting underprivileged students with quality education and resources.</p>
+            </div>
+
+            {/* Initiative 2 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/health-initiative.jpg" alt="Healthcare Initiative" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Healthcare Access</h3>
+                <p class="text-gray-300">Providing medical care and health awareness in rural communities.</p>
+            </div>
+
+            {/* Initiative 3 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/women-empowerment.jpg" alt="Women Empowerment" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Women Empowerment</h3>
+                <p class="text-gray-300">Enabling women through skill development and entrepreneurship programs.</p>
+            </div>
+
+            {/* Initiative 4 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/rural-development.jpg" alt="Rural Development" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Rural Development</h3>
+                <p class="text-gray-300">Building sustainable infrastructure and promoting rural economy.</p>
+            </div>
+
+            {/* Initiative 5 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/environmental.jpg" alt="Environmental Conservation" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Environmental Conservation</h3>
+                <p class="text-gray-300">Promoting sustainable practices and environmental awareness.</p>
+            </div>
+
+            {/* Initiative 6 */}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all">
+                <div class="aspect-video mb-6 overflow-hidden rounded-lg">
+                    <img src="/youth-development.jpg" alt="Youth Development" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-yellow-400">Youth Development</h3>
+                <p class="text-gray-300">Nurturing young talent through mentorship and leadership programs.</p>
+            </div>
+        </div>
+
+        {/* Call to Action */}
+        <div class="mt-16 text-center">
+            <p class="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto mb-8">
+                Join us in making a difference. Together, we can create lasting change.
+            </p>
+            <a href="/contribute" class="inline-flex items-center px-8 py-4 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-full hover:bg-yellow-400 hover:text-gray-900 transition-colors duration-300">
+                Support Our Initiatives
+            </a>
+        </div>
+    </div>
+</main>
+
+<style>
+    .container {
+        max-width: 1200px;
+    }
+    
+    @media (max-width: 640px) {
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+</style>
