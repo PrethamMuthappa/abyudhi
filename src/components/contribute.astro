@@ -1,6 +1,7 @@
 ---
 import Header from "./Header.astro"
-import gpay from '../assets/gpay.svg'
+import gpay from '../assets/gpay.jpeg'
+import phonepe from '../assets/ppay.jpeg'
 import Image from "astro/components/Image.astro"
 ---
 <Header />  
@@ -16,7 +17,7 @@ import Image from "astro/components/Image.astro"
             </p>
         </div>
 
-        {/* Bank Transfer Section */}
+        <!-- {/* Bank Transfer Section */}
         <div class="mb-12 sm:mb-16">
             <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-yellow-400">
                 Donate By NEFT Or RTGS
@@ -91,7 +92,7 @@ import Image from "astro/components/Image.astro"
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         {/* QR Code Section */}
         <div class="text-center">
@@ -110,9 +111,9 @@ import Image from "astro/components/Image.astro"
                 {/* Paytm QR */}
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 hover:bg-white/15 transition-all">
                     <div class="aspect-square max-w-[200px] sm:max-w-[250px] mx-auto mb-3 sm:mb-4">
-                        <img src="/paytm-qr.png" alt="Paytm QR Code" class="w-full h-full object-contain" />
+                        <Image src={phonepe} alt="Paytm QR Code" class="w-full h-full object-contain" />
                     </div>
-                    <p class="text-base sm:text-lg font-semibold text-gray-200">Paytm QR Code</p>
+                    <p class="text-base sm:text-lg font-semibold text-gray-200">PhonePay QR Code</p>
                 </div>
             </div>
         </div>
